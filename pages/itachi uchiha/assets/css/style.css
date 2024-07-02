@@ -3,8 +3,10 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    scroll-behavior: smooth;
 }
 
+/* Header styles */
 header {
     background-color: #000;
     color: #fff;
@@ -12,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 100%;
     top: 0;
@@ -58,7 +60,7 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 14px;
-    transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
     padding: 8px 12px;
     border-radius: 4px;
 }
@@ -72,16 +74,37 @@ nav ul li a.active {
     color: #fff;
 }
 
+/* Hero section styles */
 .hero {
-    background-image: url('');
-    background-size: cover;
-    background-position: top;
+    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
 }
 
 .hero-content {
@@ -92,23 +115,116 @@ nav ul li a.active {
 .hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff4500;
+    background-color: darkred;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #dd3700;
+    background-color: lightcoral;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo span {
+        font-size: 16px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+/* Features section styles */
+.features {
+    background-color: black;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features .container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    color: darkred;
+    margin-bottom: 20px;
+}
+
+.features .intro {
+    font-size: 1.2em;
+    color: darkred;
+    margin-bottom: 40px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-img {
+    flex: 0 0 30%;
+    margin-right: 20px;
+}
+
+.feature-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.feature-info {
+    flex: 1;
+    text-align: left;
+}
+
+.feature-info h3 {
+    font-size: 1.8em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.feature-info p {
+    font-size: 1.1em;
+    color: white;
+    line-height: 1.6;
 }
