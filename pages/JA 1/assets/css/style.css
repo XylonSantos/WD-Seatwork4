@@ -94,15 +94,16 @@ body {
 
 .hero-content .cta {
     padding: 10px 20px;
-    background-color: #e50914;
+    background-color: darkred;
     color: white;
     border-radius: 4px;
     text-transform: uppercase;
     transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline */
 }
 
 .hero-content .cta:hover {
-    background-color: #b00710;
+    background-color: lightcoral;
 }
 
 /* Additional styles for responsiveness */
@@ -153,6 +154,7 @@ body {
     max-width: 1200px;
     width: 100%;
     text-align: center;
+    margin-top: 40px;
 }
 
 .features-content video {
@@ -174,14 +176,20 @@ body {
     color: white;
     max-width: 800px;
     padding: 20px;
-    background-color: black;
+    background-color: #222;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .features-content .text-content p {
     margin: 0;
+}
+
+.features-content .text-content:hover p {
+    color: #e50914;
+    font-weight: bold;
+    transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
 /* Additional styles for responsiveness */
@@ -195,4 +203,5 @@ body {
         line-height: 1.4;
     }
 }
+
 
