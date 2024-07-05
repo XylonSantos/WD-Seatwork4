@@ -157,6 +157,19 @@ body {
     margin-top: 40px;
 }
 
+.features-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 .features-content video {
     max-width: 100%;
     border-radius: 8px;
@@ -180,6 +193,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease, color 0.3s ease;
+    margin-top: 20px; /* Adjusted margin */
 }
 
 .features-content .text-content p {
@@ -192,16 +206,29 @@ body {
     transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
-/* Additional styles for responsiveness */
-@media (max-width: 768px) {
-    .features {
-        padding: 30px 10px;
-    }
+/* Different styles for feature1 and feature2 */
+.feature1 .features-content {
+    flex-direction: row-reverse; /* Reverse order for image/text placement */
+    justify-content: space-between; /* Distribute space between image and text */
+    align-items: center; /* Center align items */
+    padding: 0 20px; /* Add padding for spacing */
+}
 
-    .features-content .text-content {
-        font-size: 1rem;
-        line-height: 1.4;
-    }
+.feature1 .features-content img {
+    max-width: 45%; /* Adjust image width */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.feature1 .features-content .text-content {
+    max-width: 45%; /* Adjust text width */
+}
+
+.feature2 .features-content {
+    flex-direction: column; /* Keep video and text stacked vertically */
+}
+
+.feature2 .features-content video {
+    max-width: 600px;
 }
 
 
