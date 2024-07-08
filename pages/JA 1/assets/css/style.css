@@ -346,5 +346,24 @@ body {
     transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
+.feature5 {
+    background-color: darkslategrey;
+    color: white;
+    padding: 50px 20px;
+}
 
+.feature5 .images {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
 
+.feature5 .images img {
+    max-width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature5 .text-content {
+    max-width: 800px;
+}
