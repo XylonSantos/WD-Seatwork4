@@ -60,23 +60,24 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+- What is the project - The project is a Feature Display Website that showcases distinct design layouts and features using pure HTML and CSS. It consists of multiple pages, each dedicated to a different theme or subject, and includes various sections highlighting specific content through engaging visuals and interactive elements.
+- Whats the purpose - The primary purpose of the project is to demonstrate the use of HTML and CSS to create visually appealing and functionally rich web pages. 
+- What are key components - The main entry point to the website, featuring a video background and navigation links to the other feature pages. Feature Page 1: Focused on Itachi Uchiha, featuring sections like hero section with background video, Dōjutsu, Sharingan, Mangekyō Sharingan, Susanoo, and Itachi’s feats in Akatsuki. Feature Page 2: Focused on Ja Morant and the JA 1 shoes, including sections like hero section with background video, shoe features, various colorways, and styling details. Navigation: Provides easy access to different sections and pages, enhancing the user experience.Header and Footer: Consistent across all pages, providing branding, navigation links, and contact information. Media Elements: Videos and images used to create engaging backgrounds and highlight content.
+- What technology used and how it is used - HTML: Used to structure the content of the web pages. Defines elements like headers, sections, paragraphs, navigation links, and media elements (videos and images). Organizes content into a logical, hierarchical structure, making it accessible and easy to navigate. CSS: Used for styling the HTML elements to create visually appealing layouts. Defines the look and feel of the website, including colors, fonts, spacing, and alignment. Utilizes advanced CSS techniques like flexbox and grid for responsive layouts. Includes transitions and animations to enhance interactivity and user experience. Provides styles for different screen sizes to ensure the website is responsive and looks good on various devices. Media Elements (Videos and Images):Videos are used as background elements in hero sections to create an immersive experience. Images are used for logos, product showcases, and illustrative purposes.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Landing Page
+- Features Pages
+- Navigation
+- Header and Footer
+- Media Elements
 
 ### Technology
 <!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
@@ -117,4 +118,5 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| HTML Tutorial | HTML Tutorial of the basics | https://www.w3schools.com/html/ |
+| CSS Tutorial | CSS Tutorial of the basics | https://www.w3schools.com/css/ |
